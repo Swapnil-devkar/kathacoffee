@@ -60,7 +60,7 @@
 
     .first {
 
-        height: 1130px;
+        height: 1250px;
         width: 100%;
         display: block;
         justify-content: center;
@@ -114,18 +114,26 @@
         color: rgb(236, 15, 15);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
-.final{
-display: flex;
-align-items: center;
-justify-content: space-around;
-justify-items: center;
-}
+
+    .final {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+    }
 
     .up>a>img {
-       
-        height: 60px;
-        width: 60px;
-       
+        height: 35px;
+        width: 35px;
+    }
+
+    .swapnil {
+        color: rgb(223, 55, 55);
+        font-size: 23px;
+    }
+
+    .swapnil:hover {
+        color: black;
 
     }
 </style>
@@ -223,16 +231,17 @@ justify-items: center;
                 </div>
 
 
-            </div><br><label style="color: rgb(223, 55, 55); font-size: 30px;">Offers in audio</label>
-            <div class="final">
-            <div class="up">
-
-             <button id ="last"><audio controls >
-    <source src="audios.m4a" type="audio/mpeg">
-  </audio></button>
-   <a id="last"href="orders.html"><img src="up-arrow.png" alt="">
-                </a>
             </div><br>
+            <label class="swapnil">Offers in audio</label>
+            <div class="final">
+                <div class="up">
+
+                    <audio style="height: 35px; width: 250px;" controls>
+                        <source src="audios.m4a" type="audio/mpeg">
+                    </audio>
+                    <a id="last" href="orders.html"><img src="up-arrow.png" alt="">
+                    </a>
+                </div><br>
             </div>
         </div>
 
