@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo11.png" type="image/x-icon">
+    <title>Coffee Shop</title>
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .head {
+        background-color: #a56c21;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+
+    }
+
+
+    .option {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .option>a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .option>a:hover {
+        color: black;
+        font-size: 23px;
+    }
+
+
+    .hero-section>p {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .hero-section video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .thridpage {
+        margin-top: -5px;
+        background-color: #db9447;
+        width: 100%;
+        height: 740px;
+        gap: 0px;
+    }
+
+    .special {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 45px;
+    }
+
+    .row1 {
+        height: 300px;
+
+    }
+
+    .row1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .one>img {
+        border-radius: 30%;
+    }
+
+    .manucard {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .manucard>a>button {
+        background-color: black;
+        color: white;
+        height: 40px;
+        width: 90px;
+        border: none;
+        border-radius: 15px;
+        font-weight: bold;
+
+    }
+
+    .manucard>a>button:hover {
+        background: white;
+        color: black;
+    }
+
+    .up {
+        justify-content: right;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .fouthpage {
+        width: 100%;
+        background-color: rgb(57, 55, 55);
+    }
+</style>
+
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="logo11.png" width="100px">
+        </div>
+        <div class="option">
+            <a href="index.html">Home</a>
+            <a href="orders.html">Offers</a>
+            <a href="#">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div class="secondpage">
+        <section class="hero-section">
+            <video autoplay muted loop>
+                <source src="coffee.mp4" type="video/mp4" />
+            </video>
+        </section>
+    </div>
+
+    <div class="thridpage">
+        <div class="special">
+            <p>Katha Specials..!</p>
+        </div>
+
+        <div class="row1">
+            <div class="one">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBUPEhIWDxAPEBAPDw8PFRAVDxAPFRUWFhURFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFxAQFy0dHR0tLS0uLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0rNy0rKy0rLSstLS0rLS0rNy0tLS0rLf/AABEIAM4A9AMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAADBAECAAUGBwj/xABCEAACAgECAgYIBAMHAQkAAAABAgADEQQhEjEFE0FRYZEGIjJxgaGx8AdSYtEUQsEWM3KCkuHxQxUjNFNUY6Kjsv/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACMRAQEAAgICAwACAwAAAAAAAAABAhEDEiExE0FRYYEEIkL/2gAMAwEAAhEDEQA/APH8zMyJYCYtkTJbEkLDY0riTiECywSLZ6BCyeGHCSwSLZ6L8EkJGQkkVxdj6lurkiuNCqXFUXY+pPq5PVxwVSepi7jqTFct1UcFMuKodj6keqleqmzWnaUamLuOrX9XC1U7xkUxmjTw7DqRvWLFJstTXvFzVH2LqT4JBSOGuVNcOw6lOCRwxopKlI+xdSxWRiHKSpWVstA4kQpWVKw2Wg5ktiZK2SglgJUQiiFESBLhZKiEVZFqtKhZcJLqsIqSbVyBhIRa4VUhFrk2qkBFcuK4cVwgrk9laLiuWFUZWuEFcnsfUqKpYVRoVSwqk9ldSgqlxVGhVCJRmLsOpWuqRZTNjwY2lXqj7DqRp02Y5Xp8RnTUw5ojmRWNDqqd4u1U32q0uZrrKTDsJi1xrlWrjxqlDXH2HUga5QpHmSCauVMk6JlJQpG2SCZZUqbCrLKFYyywTLKlRYARMlyJkpOgFEKgg1EOgjpRdRCosqixitZFrSRipCqksqwqpM7VyIVIVUllSHVJFq5A1rhFrhFSFWuRauQJUhFrh0rhVqkXJUhYVS4qja1y4rk3I9FFph0pjC1Qy1Sex6I9TLmmPpp5f+Hh2GiVFMZFcMtOIQVypmmwsdPnaIanRzerXK20ZEvZacpZRiBamb3U0RF6ZPY9NW1UC9U2j1QD1ypmVxax64B0mzeuL2VzSZIuLXMsC6x6yuLOs0lZ2FSJEIRMl7SUQQ6QNcYSXUQZBGEEDWI1WJlWkgiLDKsqgh0WZ2tJFkSHRJFaxmtZna0kVWuHSuWRIdEmdyXIotcMlcIiRhK5nclSALVDLTGErjCUzO5K0VrojFelmw0mhd/ZRn/wgn6Tcaf0fvP/AE8f4io/rLxwzy9RGWeM91z66aX/AIedOPR23tZF97H9pP8AZ49ttfmZr8Gf4z+bH9cv/DzBp51P9n//AHU85n9nX7HrPxP7Q+Dk/C+bH9cuKJjVTpLPR68cgG9zD+uIlf0TcvOtvgM/SF4857lE5Mb9uW1dMQtpnR6rT+GDELtPMbbttPTRPVFnrm5tpidtUcyFjV2JFrEmysri1iTXHJFjWWpFbEmytSKWrNsazyjXssyGZZk02z01VYjNYgaxGaxNrWWI1YjVYgaxGq5lWsEQRhFg6xGaxMq0glaxqtYKsRqsTLJpF0WHrSVQRqtZlVxatIyiSK1nSehvR6W3lnGVpXj4T2tnbPu3PlJxxueUxn2M8pjjbU9E+jFliiyw9TWdxxe2w8F7Pj5TeUaHS07JV1rD+e31t+/HL6TY6glj97S1NIHLn2E77zqxxkusJ/d9uW52zeV/pWvrm7kHcAABLLpwwyXJ9/FnyMK+AnE5xjHExwoUnHrescY37z8Yn0nQhw3GxOABWjsEY8wxVWBPfz5CdEwv/V2w+T88DPTWoz2DcsdgAOZOeUQHSmkJZeNUarh6xbc1snEcJkPjZiDg9vZPOPTPpy8WuHQlLK+BkDXtSoweFkVia3Bzz4FYY7ROUbpyxEVa8KwXgexW/wC8sOcgsfaBUhMYOMVjmNgrhj+Lna/b21el9LxMpYL1arY7NkIqMxRW4uRBI557D3Rym3TuoZbEZWCspVlIZW2UjwJ5HtngVfS7MrB2Z+NSvBxtUhYnt4Tghfynbedp6MdKWWlK61sPAjBrMqa6yihVVHKnPEGGwKnK7EZ3Jhj+C3Kfb1MaP8p5dx5GXC2L259+81/Qr22IrurUkbBFZTwDBAJIYhtsdh35ZG83NROAGOTnAbYcWPDvlzjn14ZXkv35J3Kj7WVq3vAzNPr/AEYqsGaW6tuxG3U/1nSWoDFjXIzn1lNqwy+8bp5n0l0dZS3BYvCezuI7we2aq6qer9LaJdRp3VvarzwP2ggZH7GeY3CcXNxdLLPVdvDyd5d+409tcTuSbW5YjcsjGtbGstWKWrNhaInaJvjWVIMsyFcTJptnpo6zGEb7EGiCGRZ01zwetowlkWRYZBIrSG0eM1PEkh65lYuVsK7IzXZEKzGKzMrGsp+u2N1WTX1GN1GZZRcrYV2TpfQ7U8Nx8a/PDD95ytbTdejl3DqE/VlPMHHzxDhvXlxv8p5pvjyejikHdfLtHhJVMQRHqhhsccxFbOl+r2cZHLI5z1rwTe54eZOS/bZuM43Iwc4GMHwO3KK26QFd/bPJ0AwhO2UVyQux+sHT0xQ/JwD3Nt9Yx1oI2IYHyiuGU/kbjjOlfw7rcL1bFMNxWtktfaNy3rucFiSN2HIY25jWaj8NKnvC5epHRn9XBwcKOFjnGc55hts7z0fj8B8DM6zw+YkWX8XMr+vMui/w4ID8bGxVtU1HiNZZQD/eZXiQg4OxI2Bx2Tq+i/RdNJjqzk8RZmwGuffkzsdxjOfhjGMTous/SfNf3ki0fl+JIhJfwXK/qlNYVTwrwZJOMbE9+Ae3/mNjMD/EeCj4kwT6r9X+kAfXMuY1Hg0xxuTiAduLlsPzHl/vFX1QG+MnvO5+cxbS258o/i37HbXpTpTVhKnVexHZm+BJM4zo70av1A4zimvmHs5kd4XmfjidfaQOJjyGBvymi9JOnClYxzbZFPb3uR3D6yOfhwuss/WLTh5M5uY+6Xs9C6W2XVjj8U9XP+qcZ6QdFW6Szq7QNxlGXdHXvUxxen9QrBi3GAd0IUAju2G3wnVek1I1XRzPzbTgXVsefBjJHkZzdOLkxt45qx0d+Tjykzu5XldzxS0xq2K2YmWLaliZkkzJaGoEup+8Qak+PyhAx+8ftOquaCq0KrQKue778oRXPcJNi4YVoZDFVfw+cKj+Hzk2KlOo0YRoilv3mMJb95mdi5T1bRqp5rkuH3j9ozXqB94/aZZYtJWzreOaW8oyuOaMrD3g5mpr1A+8ftN90J0NqNVvWh4O21yFqHxxv8MzOYW3xFXKSeXp2iuD1gjcEBh/hIyJqul69j5w/RWlOnrWo2C3hBBYDAG/s+OITpBMie3jbZNvIupfDkbRvMrcjkSPccQuqTBgFjM9Vq7B/O3mY3XrbPzmaysxqswDYpqrD/MYZbWPaYjW0ZraBGlJhBAK0vxwJlhhqDFWbMYq5fKAaP0s6WekIiY4rOJ2LAHCjAXY7d/lOH1mrexuN24mO2T3dw7h4TuPSP0Zt1DG6qxbDwgdS3qlQByU9u+TvjnOM/7LvNhp6tlce0HGAo7yccvr2Znk/wCTjy5cl3Lr6el/j3jmHj39kKq2tcVpuznAH9T4DnPQOnrF0vRdgJ3srWisdpyAufLeX6D6Br0iG20jOMuzYGQN8fpX6zifTH0gOrtwu1Ne1Y/Mfz4+n+83xw+DC795M8svmzmvUctbaPHyiz2eB8o4598C5Pj8phI2pMv4N5TIYkzJaWlA+9pYQa498njnSwFEuINT8fCSH+EkxhLiDrOe34S3H4eclQymGQxets9vwEtx+HnJsVKbVoVGMUqfPbPQPwr6DW+5tVYua9MQKwdwbsZ4v8ox8WHdFMLldHc5jNtv6I+hIVRqdaOe9emPyNnef0+fcO2ZywCgcKDAVF2UDumK3WMWPIbAeEJkDlO7DDHCajhzzuV3VFp2lAcgqeY2mxppzufKA6T023WKN19oDtXv+EtLmukdGeYmpNLA8p1XGGEE2lUwG3OKp7odMzc/wQkjSCA21qZjFeY6NNLrRAF1BhAhjArmEQAITEMtgHME+ABJgVPG2BuB3R6pb/5QEHeeflAAkWHcL1Y/PZt5CQpHFkE2vy6x/ZX3CGbTEnLsbPA7DyhfVx4DYiAee/iKdWjhX/8ADNjgZM4Zu5/HuHKcI7T3bWaSvUVvpbRxK6nHf7wew9vwngPTNVmmvs07c6nKZyfWHNW+IIM4ufivbt+uzh5JrX4szQLtEX1TfZgn1B7zMpg1uR4tMms69vGZK6o7EQR/wZYN4+Yg+skhxOjTHYo++cuD4/SAFolxaJOlbHEIpMAtqy4tWTpUo4Murfe8Cti98Irr3/OKw4LmeyfhWwPRbhfaFlvFjvyP6cM8aDeIna/hl6SrpLzTY2KdQQMnGFs5Dz2HvAlcV1knlm8XrOjf1POD0bk2EHvEl16o8Q3rfcEdkram/WLz7Z1uR0FZl5rdLqwff2iOrZmBNB0tT1L5X2G3A7j3RerVgxv0k1lfD1TEAnkcgEeIM5LW3tQOJrEZezrGCOfAdjGByOqW8S3XCcRpvSyhmCElWb2QRni/w45x3+0NHbaB4McH5xbFmnVdcJB1AnKt6Racf9Zf9Qgj6Q1H2eKzwrVm/wDyDGNOqfWARS7WZ2zjvJ7BOeOs1Vm1dBQfnuIQeR9b5RjS9FuTxXWdY3MIuRUD9W+PlAO56KpC1gjm2+e8dkbM57SdIOmx9YfObWrWKwzy98CMN2zWB92PZviE1OpzsPOL8YUfQd5gZitj1tY7QN/KeP8A4lFT0jbw45IG5e1j9sT1XpLpCvQ0Pq7zg8Pqr25PJQO8zwTpHpBr7Xub2rWLnwzyHwGB8JjzXxptwzzsFh97QZWVNkGzznkb7X4ZMDxTI9FsgF/SfKWCfp+UAG8B8pYN4D5zVnDK1/p+UuEP5flFg3gPIy4PgP8ATEoyqt+X5Qqq35flFB7h5CXHuHkP2k6UcCn8vy/2luE/l+X+0UB8B5L+0uCO4eS/tFozHB+gf6YG5Fx7A8pmfAeS/tKv7h5L+0Qd36E/iWdMBptZmyj2VuO7IO5+8ePn3z1PSNVegt01gdGAYAEEEeBnzNdX4DyEJ0P05q9C/Hp7TWM5Kc6296/1GDOjHP8AXPnh53H0m5ZTuOE/WWfpEopPbPNegPxmQgV62nHfZWOJffjmPIzs9L030drVzReufyhhke8cxNdstPLvSLWt/E3M9rl3scpkIQEJPAoyp2AwMeE5rpHpEWOGtYWdWCioVVlUZJOF5Dee7v0ErHiCpYe/AzPOulfw9trsIrqZkLcSkblVzngOOzx5zLpry3nJ28ND6IaVdVqa0CJWtbde1i1BXxWQxCkHY5xv2Znaf23rZs9UVrJwGt41JB5H2CB7sxz0W9Gv4Ytc+Ra68CgkkVp+Vc8v9pr9Z6E2Ox4bgtZOeAjkO4eELMpPBS42/wCzptBrdPbV16MnAN2YlAExzyZPRPTWl1TMlFy2tX7arkMByzg4yPETzT0p9H9Vp3FKB7dKVDjgJCtcc8XGAeLux9ec6P8ADz0ftpY6q5erY1mqusALwqSCxwO/hHlKlvpNxmt7d6K5bCjtz7oNQTyBPuBhV0lh/lI9+31ls1TdjkIu9jHtjT6ZV3ssVAOfaZzvS3pz0VpMg2C+wfyJ67Z7sLsPjAOl0QsfkP8AMeXnF+n/AEl0XRacd1ge0j1K13sY9yr/AF+k8l9IPxb1dwNelQaZDtxthrceA9lfnOFZ7LrC7s1tjndnJZ285Ny0qY7dL6V+lup6Tu6xya6lJ6mhfZQfmbvbx7OztzqV4u8xepuzbbny2hxZ7vKYZXy3xmmEN3nylSG7z5STZ4DylTZ4D7+MRow35j5SJhs8B85kZaLD75S2fvMCGl+LvPlKIUH73lgR94gOs8POStnwi0ezAb7+xLhoqbMTOtho9nOIwVerVdmZu0MONlz8AIMP2yOs8POEGzOlsyDjIAJxxFjt7/vnGWBwDkEHkQc8vjNYLHG67g8x4zK7N8mFkEtPsPveBsqlRd4SDeIlXQNmmi7UEHI5jcHtEe60d0sqlgSBkDeVLUWQTQ+kvSGn/u9TYAOxjxj/AOeZ0Oj/ABW6Tr9o12j9SsD5g4+U5VGGM4BPx8oNnDE4AXfkNwPOV2qOsejUfjTqB7elRu8iwj5FY4v40p/Noz8ChnlTKPsCbJtWlaeqUAIIOyt9f2jmVTcY9GP4z0/+iP8A9f7wFv41kexo9/1Oo+gM8ur0xK5x8O3EJptMG3IOAcdige9m+gBMfYTCV3up/GfWt7FFae9mb6ATSa78Rulrh/eisH/ykHL/ADZnNamkIcZDdvq5IHhk84RNaABg4x/K2/wwYu1p9ZPa1ut1GrbF99lgY7h3bh8uQ8pOt6NRE41Zds5BtVifcoRZfTVGwFgQhznABGc9xxt5wOtrRiEViwXPE7M2C3cAQMYi2evC69HsF4tj2kDOQO/3QaWBchs78h6wB9+Nz7sgQun1NoZVB9Ynq8+B2II9xjus6NatS2eII4RtuWQCp+IIk2rxn2UF3Gc44QBhQAFHkJJaCyf+CZXj98k9iFpBPhKcXj5yCfDyjLa+RMg+IeMiA2XluKVky0LZ90z4SPvlM8ojXDTMiVH3gyfvsgFxMxKgfe4k5iNZSRMIHukSRAMxI4O6XAkgQNQqTGNPrCq8J2K7A+EoBJxCU7irqQtrlwvACBkAnBbtI8DM0zrXscrvzDFdvmD8RCCScQ2fUKylXYlSSPEKDn/LsYNtEPjGwZnFFujrCtdzDAOQVxg9m0m0OxLbLxHJAxjPhtGCZhMfYphIWppZs8z3kAMT8CQZFumAJXtHeGU+TAGXas5yp2zkqRkZ74QsT7RJx78D3ZhsaF/jUUYWpgcYI48jPfnnFFYg8R7SSds8PnzhTKmGy6os1JLKQPVrOR47789yfE8zNvf0sjVWITxtYKwuxwCDuSDy2P0mokGL2fmMBlTJMiMmfOYcmQZECZgd8yRJgQEmTJlBEmTJiCJOJkmBpEkSMyREawkiVk5ga0kSuZmYjEBk5g8yeKA2JmZmD4pPFDR7XzMzB8UnihobXzIzKcUjigNr5kZleKRxQLa+ZGZXMjMAnMzMrmQTGW1pGZXMyBJJkSCZGYEmZK5mRk//2Q=="
+                    width="100">
+                <p>hot Coffee</p>
+            </div>
+            <div class="one">
+                <img src="https://media.istockphoto.com/id/610747890/photo/green-tea-cup.jpg?s=612x612&w=0&k=20&c=IUaRHAoX59hJw9qnnrByqkIWc9jXIQbLz6en8Q27kh8="
+                    width="120">
+                <p>Gree tea</p>
+            </div>
+            <div class="one">
+                <img src="https://www.shutterstock.com/image-photo/white-tea-cup-refreshing-hot-600nw-2461982285.jpg"
+                    width="110" height="90">
+                <p>Tea</p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="one">
+                <img src="https://images6.alphacoders.com/132/thumb-350-1321867.webp" width="120" height="90">
+                <p>Soft Drinks</p>
+            </div>
+            <div class="one">
+                <img src="https://img.freepik.com/premium-photo/assorted-milk-shakes-with-banana-mango-cream-ice-cream-chocolate-berry-served-glass-side-view-healthy-drink_689047-1424.jpg"
+                    width="120" height="90">
+                <p>Milk Shake</p>
+            </div>
+            <div class="one">
+                <img src="https://assets-eu-01.kc-usercontent.com/559bb7d3-88a4-01c1-79a3-dd4d5b2d2bb0/ea01b7d5-83c0-4a93-a097-80e8fa9a138a/American%20Pancakes%20-%204.3%20landscape-9380.jpg?w=3840&q=85&auto=format&lossless=1"
+                    width="110" height="90">
+                <p>Pancakes</p>
+            </div>
+        </div>
+        <div class="manucard">
+            <a href="Khatamanucard.pdf"><button> View Menu</button></a>
+        </div>
+        <div class="up">
+            <a href="index.html"><img src="up-arrow.png" width="35" alt="swapnil"></a>
+        </div><br>
+
+    </div>
+
+    <div class="fouthpage">
+        <footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
+            <div style="margin-bottom: 5px;">
+                Open Hours: 9:00 AM – 11:00 PM | All Days
+            </div>
+            <div>
+                <p>© 2025 Katha Caffee | Built by Swapnil Devkar</p>
+            </div>
+        </footer>
+        <div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
